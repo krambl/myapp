@@ -1,1 +1,186 @@
-Hello world
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BelHard Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+
+
+
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"></a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Денежные переводы</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Финансовая информация</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Банки
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Белгазпромбанк</a>
+        <a class="dropdown-item" href="#">МТБанк</a>
+        <a class="dropdown-item" href="#">Технобанк</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<br>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2" style="background-color:lavender;">
+
+
+
+      <body>
+<div class="container">
+  <h2>Алуары</h2>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Webpay</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">MTS Деньги</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Webmoney</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Belpost</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Межбанковская система индетификации</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Кредитый регистр</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Белгазпромбанк</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Технобанк</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">МТБанк</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">БВФБ</a>
+    </li>
+  </ul>
+</div>
+</body>
+
+
+
+
+
+
+    </div>
+    <div class="col-sm-10" style="background-color:lavenderblush;">
+
+
+
+
+
+
+
+
+
+
+
+      <body>
+      <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 80%;
+  }
+  </style>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'payments.jpg' %}" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h1 style="color:#000000">ПЕРЕВОД СРЕДСТВ</h1>
+        <p style="color:#000000">Переводите деньги используя доступные способы</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'report.jpg' %}" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h1>ИНФОРМАЦИЯ О СОСТОЯТЕЛЬНОСТИ</h1>
+        <p>Получите информацию о себе из открытого источника</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'tools.jpg' %}" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h1 style="color:#000000">ИНСТРУМЕНТЫ ДЛЯ РАСЧЕТОВ</h1>
+        <p style="color:#000000"><font size="4">Воспользуйтесь инструментами для получения необходимой информации</font></font></p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</body>
+
+
+<div class="container">
+{% block content %}
+{% endblock %}
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
