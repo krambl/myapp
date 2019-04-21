@@ -5,10 +5,9 @@ from .models import Post
 
 def post_list(request):
     posts = Post.objects.all
-
     return render(request, 'myapp/main.html', {'posts': posts})
 
 def webpay_list(request):
-    post = Post.objects.get(title="Webpay")
-    return render(request, 'myapp/webpay.html', {post})
+    posts = Post.objects.all
+    return render(request, 'myapp/webpay.html', {'posts': posts})
 
